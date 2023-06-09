@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+@import "utils";
+@import "base";
+
+//components
+
+@import "components/main-logo.scss";
+@import "components/introduction.scss";
+@import "components/services.scss";
+@import "components/button-blocks.scss";
+@import "components/devstages.scss";
+@import "components/stage-item.scss";
+@import "components/cost.scss";
+@import "components/cost-item.scss";
+@import "components/tasks.scss";
+@import "components/tasks-item.scss";
+@import "components/order.scss";
+
+//blocks
+
+@import "blocks/main-header.scss";
+@import "blocks/nav-block.scss";
+@import "blocks/nav-block-button.scss";
+@import "blocks/main-container.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-contacts.scss";
+@import "blocks/main-footer.scss";
+
+@import "closed";

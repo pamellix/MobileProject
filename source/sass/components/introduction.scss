@@ -1,0 +1,124 @@
+.introduction {
+  background-color: $blue;
+  border-radius: 10px;
+  color: $white;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 25px;
+  padding: 0 15px 0 15px;
+  padding-top: 45px;
+  background-image: url("../img/introductionbg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: 100%;
+  height: 1095px;
+
+  @include desktop {
+    text-align: left;
+    max-width: 1733px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 797px;
+    background-image: url("../img/introductionbgdes.svg");
+    background-size: cover;
+  }
+}
+
+.introduction-block {
+  text-align: left;
+  margin-left: 10px;
+  padding-left: 50px;
+  margin-right: 19px;
+  background: url("../img/minirocket.svg"),
+              url("../img/miniprize.svg");
+  background-repeat: no-repeat,
+                      no-repeat;
+  background-position: 0 5px,
+                      0 73px;
+
+  @include desktop {
+    margin-left: 90px;
+  }
+}
+
+.introduction__title {
+  width: 257px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  @include desktop {
+    margin-left: 90px;
+    margin-top: 207px;
+    width: 641px;
+    font-size: 55px;
+    line-height: 57px;
+    align-self: left;
+  }
+}
+
+.introduction__depiction {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: left;
+
+  @include desktop {
+    width: 424px;
+  }
+}
+
+.introduction__order {
+  min-width: 330px;
+  width: 100%;
+  min-height: 73px;
+  background-color: $red;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 25px;
+  color: $white;
+  margin-top: 27px;
+  transition-duration: 0.3s;
+
+  @include desktop {
+    width: 268px;
+    margin-top: 0;
+  }
+}
+
+.introduction__order:hover {
+  background-color: darken($red, 20%);
+  transition-duration: 0.3s;
+}
+
+.introduction__consultation {
+  min-width: 330px;
+  width: 100%;
+  min-height: 73px;
+  background-color: rgba(12, 74, 179, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 25px;
+  color: $white;
+  margin-top: 10px;
+  transition-duration: 0.3s;
+
+  @include desktop {
+    width: 268px;
+    margin-top: 0;
+  }
+}
+
+.introduction__consultation:hover {
+  background-color: darken(rgba(12, 74, 179, 1), 20%)
+}
+
+.introduction__buttons {
+  @include desktop {
+    display: flex;
+    gap: 26px;
+    margin-left: 5%;
+  }
+}

@@ -1,0 +1,136 @@
+.main-contacts {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-left: 52px;
+    width: 100%;
+    max-width: 290px;
+    flex-direction: row;
+  }
+}
+
+header .main-contacts {
+  position: absolute;
+  order: 2;
+  top: 100%;
+
+  @include desktop {
+    position: relative;
+  }
+}
+
+.main-contacts div {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    display: inherit;
+  }
+}
+
+.main-contacts__tel {
+  position: relative;
+  /* width: 160px; */
+  margin: 0 auto;
+}
+
+.main-contacts__mail {
+  position: relative;
+  /* width: 160px; */
+  margin: 0 auto;
+}
+
+header .main-contacts__tel::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  left: -25px;
+  top: 5px;
+  background-image: url("../img/miniphone.svg");
+  background-repeat: no-repeat;
+
+  @include desktop {
+    top: 0;
+  }
+}
+
+header .main-contacts__mail::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../img/minimail.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 19px;
+  height: 19px;
+  left: -25px;
+  top: 5px;
+
+  @include desktop {
+    top: 0;
+  }
+}
+
+.main-contacts__media {
+  display: inline-block !important;
+  width: auto;
+  height: 50px;
+  margin-top: 32px;
+
+  @include desktop {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.main-contacts__media-whatsapp {
+  content: "";
+  background-color: $blue;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/whatsapp.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.main-contacts__media-whatsapp:hover {
+  background-color: darken($blue, 20%);
+  transition-duration: 0.3s;
+}
+
+.main-contacts__media-tg {
+  content: "";
+  background-color: $blue;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.main-contacts__media-tg:hover {
+  background-color: darken($blue, 20%);
+  transition-duration: 0.3s;
+}
+
+.main-footer .main-contacts__media {
+  width: 110px;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @include desktop {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+}

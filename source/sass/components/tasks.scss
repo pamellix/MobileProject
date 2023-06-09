@@ -1,0 +1,65 @@
+.tasks {
+  background-image: url("../img/tasksbg.svg"),
+                    url("../img/smartphone.png");
+  background-repeat: no-repeat;
+  background-position: 0 240px,
+                        50% 100%;
+  background-size: 100%,
+                    302px 603px;
+  padding-bottom: 719px;
+
+  @include desktop {
+    position: relative;
+    background-image: url("../img/smartphone.png"),
+                      url("../img/tasksbgdes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 284px,
+                          50% 81px;
+    background-size: 382px 787px,   
+                    974px 827px;
+    padding-bottom: 200px;
+    padding-top: 76px;
+    background-color: $white;
+    max-width: 1733px;
+    margin: 0 auto;
+    margin-top: 130px;
+    z-index: 2;
+  }
+}
+
+.tasks__title {
+  font-size: 32px;
+  line-height: 33px;
+  text-align: center;
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 28px;
+
+  @include desktop {
+    font-size: 55px;
+    line-height: 57px;
+    width: 963px;
+    margin-bottom: 195px;
+  }
+}
+
+.tasks__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 0 10px 0 10px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 410px 410px;
+    column-gap: 475px;
+    row-gap: 66px;
+    max-width: 1295px;
+    margin: 0 auto;
+  }
+}
+
+.tasks__item:nth-child(1) .tasks-item::before {
+  content: "1";
+}

@@ -1,0 +1,13 @@
+.main-logo {
+  margin-left: 15px;
+  margin-top: 18px;
+
+  @include desktop {
+    margin-left: auto;
+    margin-top: 27px;
+  }
+}
+
+footer .main-logo {
+  margin-right: 51px;
+}

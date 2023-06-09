@@ -1,0 +1,9 @@
+.nav-closed {
+  transform: translateY(-150%);
+  transition-duration: 0.5s;
+
+  @include desktop {
+    display: inherit;
+    transform: translateY(0);
+  }
+}

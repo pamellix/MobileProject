@@ -1,0 +1,73 @@
+.cost {
+  text-align: center;
+  padding-top: 33px;
+
+  @include desktop {
+    margin-bottom: 76px;
+  }
+}
+
+.cost__title {
+  font-size: 32px; 
+  line-height: 33px;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @include desktop {
+    width: 940px;
+    font-size: 55px;
+    line-height: 57px;
+    margin-bottom: 39px;
+  }
+}
+
+.cost__depiction {
+  font-size: 16px;
+  line-height: 21px;
+
+  @include desktop {
+    display: block;
+    width: 853px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+}
+
+.cost__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 33px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 410px);
+    column-gap: 30px;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
+
+.cost__item:nth-child(1) {
+  background-image: url("../img/cost1.svg"),
+                    url("../img/flagblue.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 12%,
+                        90% 0;
+}
+
+.cost__item:nth-child(2) {
+  background-image: url("../img/cost2.svg"),
+                    url("../img/flagdark.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 12%,
+                        90% 0;
+}
+
+.cost__item:nth-child(3) {
+  background-image: url("../img/cost3.svg"),
+                    url("../img/flagred.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 12%,
+                        90% 0;
+}

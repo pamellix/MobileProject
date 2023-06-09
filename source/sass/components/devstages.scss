@@ -1,0 +1,73 @@
+.devstages {
+  background-color: $blue;
+  color: $white;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-top: 50px;
+
+  @include desktop {
+    max-width: 1733px;
+    margin: 0 auto;
+  }
+}
+
+.devstages__title {
+  display: block;
+  margin: 0 auto;
+  width: 292px;
+  font-size: 32px;
+  line-height: 33px;
+  margin-bottom: 66px;
+
+  @include desktop {
+    width: 530px;
+    text-align: center;
+    font-size: 55px;
+    line-height: 57px;
+  }
+}
+
+.devstages__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  list-style-type: none;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+.devstages__application {
+  position: relative;
+  min-width: 330px;
+  min-height: 73px;
+  background-color: $red;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 25px;
+  color: $white;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition-duration: 0.3s;
+
+  @include desktop {
+    width: auto;
+    height: 139px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.devstages__application:hover {
+  background-color: darken($red, 20%);
+  transition-duration: 0.3s;
+}
